@@ -21,7 +21,7 @@ function ImgSlider() {
         <Container>
             <Row>
                 <Col><h6 class='text-center'>Lễ Bổn Mạng</h6></Col>
-                <Col><h6 class='text-center'>Trại Biển Đỏ</h6></Col>
+                <Col><h6 class='text-center'>Sa Mạc Biển Đỏ</h6></Col>
             </Row>
             <Row>
                 <Carousel indicators={false} controls={false}>
@@ -61,7 +61,7 @@ function ImgSlider() {
               </Row>
               <Row>
                 <Col><h6 class='text-center'>Nghĩa Hiệp Retreat</h6></Col>
-                <Col><h6 class='text-center'>Trại Bình Mình</h6></Col>
+                <Col><h6 class='text-center'>Sa Mạc Bình Mình</h6></Col>
               </Row>
               <Row>
                   <Carousel indicators={false} controls={false}>
