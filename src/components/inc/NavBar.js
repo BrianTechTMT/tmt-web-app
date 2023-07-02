@@ -10,7 +10,7 @@ function NavBar(){
     <Navbar sticky="top" variant="dark" bg="dark" expand = "lg">
     <Container>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Brand href="/#/tmt-web-app">
+      <Navbar.Brand href="/">
         <img alt ="" src={logo} width="40" height="40" className='d-inline-block'/>{' '}Đoàn Tôma Thiện
       </Navbar.Brand>
       <Navbar.Collapse className='justify-content-end' id="basic-navbar-nav">
