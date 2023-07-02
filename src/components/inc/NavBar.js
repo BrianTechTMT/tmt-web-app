@@ -10,7 +10,7 @@ function NavBar(){
     <Navbar sticky="top" variant="dark" bg="dark" expand = "lg">
     <Container>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Brand href="/">
+      <Navbar.Brand href="/#/tmt-web-app">
         <img alt ="" src={logo} width="40" height="40" className='d-inline-block'/>{' '}Đoàn Tôma Thiện
       </Navbar.Brand>
       <Navbar.Collapse className='justify-content-end' id="basic-navbar-nav">
@@ -18,7 +18,7 @@ function NavBar(){
           <Nav.Link href="/#/BCH">Meet the Team</Nav.Link>
           <NavDropdown className='justify-content-end' title ="Resource" id="nav-dropdown">
             <NavDropdown.Item href="/#/Morse">Morse</NavDropdown.Item>
-            <NavDropdown.Item href="#">Eucharistic Revival</NavDropdown.Item>
+            <NavDropdown.Item href="/#/eucharistic_revival">Eucharistic Revival</NavDropdown.Item>
             <NavDropdown.Item href="#">Semaphore</NavDropdown.Item>
             <NavDropdown.Item href="#">Nút Dây</NavDropdown.Item>
             <NavDropdown.Item href="#">Chuyên Môn</NavDropdown.Item>

@@ -6,7 +6,7 @@ import Home from './components/pages/Home'
 import TMT from './components/pages/TMT'
 import BCH from './components/pages/BCH'
 import Morse from './components/pages/Morse'
-import { BrowserRouter } from 'react-router-dom';
+import ER from './components/pages/ER'
 
 function App(){
   return(
@@ -14,9 +14,10 @@ function App(){
       <NavBar/>
       <Routes>
         <Route exact path="/" element={<Home/>}/>
-        <Route path="/TMT" element={<TMT/>}/>
-        <Route path="/BCH" element={<BCH/>}/>
-        <Route path ="/Morse" element={<Morse/>}/> 
+        <Route path="/tmt" element={<TMT/>}/>
+        <Route path="/bch" element={<BCH/>}/>
+        <Route path ="/morse" element={<Morse/>}/>
+        <Route path ="/eucharistic_revival" element={<ER/>}/>  
       </Routes>
     </Router>
   )
