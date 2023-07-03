@@ -10,7 +10,7 @@ function ER(){
                     <h3> What is the meaning of the Eucharist? </h3>
                     <p>The Eucharist is the source and summit of the Christian life. The term “Eucharist” originates from the Greek word eucharistia, meaning thanksgiving.</p>
                     <Col align="center">
-                        <h3>“This is my body which is given for you. Do this in remembrance of me. (Lk 22:19)”</h3>\
+                        <h3>“This is my body which is given for you. Do this in remembrance of me. (Lk 22:19)”</h3>
                         <p>The one who sacrifices for me</p>
                         <p>Went to Limbo and saved His people</p>
                         <p>Release me from the chain of sins</p>
