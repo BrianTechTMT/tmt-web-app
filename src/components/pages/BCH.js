@@ -32,7 +32,6 @@ function BCH(){
             <Row className="justify-content-md-center mt-2">
                 <Col align="center">
                     <Card style={{ width: '18rem' }} align="center">
-                        <Card.Header>Doan Pho</Card.Header>
                         <Card.Img variant="top" src={DPQT} />
                         <Card.Body>
                             <Card.Title>Đoàn Phó Quản Trị</Card.Title>
