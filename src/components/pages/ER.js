@@ -10,28 +10,46 @@ function ER(){
                 <h2 align="center">Eucharistic Revival</h2>
                 <Row className='pt-2 justify-content-md-center'>
                     <Col align="center">
-                        <h3>What is the meaning of the Eucharist? </h3>
-                        <p>The Eucharist is the source and summit of the Christian life. The term “Eucharist” originates from the Greek word eucharistia, meaning thanksgiving.</p>
-                        <Col align="center">
-                            <h3>“This is my body which is given for you. Do this in remembrance of me. (Lk 22:19)”</h3>
-                            <p>The one who sacrifices for me</p>
-                            <p>Went to Limbo and saved His people</p>
-                            <p>Release me from the chain of sins</p>
-                            <p>Resurrected for me</p>
-                            <p>I am now forever His</p>
-                        </Col>
+                        <div>
+                            <span>
+                                <div>
+                                    <h3 class="badge bg-primary text-wrap fs-5 fw-semibold">What is Eucharistic Revival? </h3>
+                                    <p>The National Eucharistic Revival is a three-year initiative by the U.S. bishops that aims to inspire, educate, and unite the faithful in a more intimate relationship with Jesus in the Eucharist.</p>
+                                </div>
+                            </span>
+                            <span>
+                                <Col align="center">
+                                    <h3 class="badge bg-secondary text-wrap fs-5 fw-semibold">“This is my body which is given for you. Do this in remembrance of me. (Lk 22:19)”</h3>
+                                    <p>He's not speaking figuratively. He's speaking literally. 
+                                        The Eucharist we have in our Masses--the Eucharist we have every single Catholic Church 
+                                        throughout the world for the last 2000 years--is not a symbol of Jesus. 
+                                        It truly is Jesus' Body, Blood, Soul, and Divinity" - Father Mike Schmitz</p>
+                                </Col>
+                            </span>
+                        </div>
+
                     </Col>
                     <Col align="center">
-                        <h3 class="badge bg-primary text-wrap fs-5 fw-semibold">What is the meaning of the Eucharist? </h3>
-                        <p>The Eucharist is the source and summit of the Christian life. The term “Eucharist” originates from the Greek word eucharistia, meaning thanksgiving.</p>
-                        <Col align="center">
-                            <h3>“This is my body which is given for you. Do this in remembrance of me. (Lk 22:19)”</h3>
-                            <p>The one who sacrifices for me</p>
-                            <p>Went to Limbo and saved His people</p>
-                            <p>Release me from the chain of sins</p>
-                            <p>Resurrected for me</p>
-                            <p>I am now forever His</p>
-                        </Col>
+                        <div>
+                            <span>
+                                <div>
+                                    <h3 class="badge bg-primary text-wrap fs-5 fw-semibold">Why we need to focus on the Eucharist? </h3>
+                                    <p>
+                                        The Eucharist is the source and summit of the Christian life. The term “Eucharist” originates from the Greek word eucharistia, <br></br>meaning thanksgiving.
+                                    </p>
+                                </div>
+                            </span>
+                            <span>
+                                <Col align="center pt-3">
+                                    <h3 class="badge bg-secondary text-wrap fs-5 fw-semibold">“This is my body which is given for you. Do this in remembrance of me. (Lk 22:19)”</h3>
+                                    <p>The one who sacrifices for me</p>
+                                    <p>Went to Limbo and saved His people</p>
+                                    <p>Release me from the chain of sins</p>
+                                    <p>Resurrected for me</p>
+                                    <p>I am now forever His</p>
+                                </Col>
+                            </span>
+                        </div>
                     </Col>                    
                 </Row>
             </Container>
