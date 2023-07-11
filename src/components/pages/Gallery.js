@@ -1,13 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 function ImageComponent() {
-  const [imageFiles, setImageFiles] = useState([]);
-
-  useEffect(() => {
-    fetch('http://localhost:8080/images')  // replace with your server address
-      .then(response => response.json())
-      .then(data => setImageFiles(data));
-  }, []);
+  const imageFiles = useState([]);
 
   return (
     <div>
