@@ -1,13 +1,21 @@
-import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
 
-function ImageGallery(){
-    return(
-        <>
-        <Container className="justify-content-md-center pt-3">
-            <h3> Hello World</h3>
-        </Container>
-        </>
-    )
+function ImageComponent() {
+  const [imageFiles, setImageFiles] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:8080/images')  // replace with your server address
+      .then(response => response.json())
+      .then(data => setImageFiles(data));
+  }, []);
+
+  return (
+    <div>
+      {imageFiles.map((file, index) => (
+        <img key={index} src={`http://localhost:8080/images/${file}`} alt={file} />
+      ))}
+    </div>
+  );
 }
-export default ImageGallery;
+
+export default ImageComponent;

@@ -12,10 +12,8 @@ function ER(){
                     <Col align="center">
                         <div>
                             <span>
-                                <div>
-                                    <h3 class="badge bg-primary text-wrap fs-5 fw-semibold">What is Eucharistic Revival? </h3>
-                                    <p>The National Eucharistic Revival is a three-year initiative by the U.S. bishops that aims to inspire, educate, and unite the faithful in a more intimate relationship with Jesus in the Eucharist.</p>
-                                </div>
+                                <h3 class="badge bg-primary text-wrap fs-5 fw-semibold">What is Eucharistic Revival? </h3>
+                                <p>The National Eucharistic Revival is a three-year initiative by the U.S. bishops that aims to inspire, educate, and unite the faithful in a more intimate relationship with Jesus in the Eucharist.</p>
                             </span>
                             <span>
                                 <Col align="center">
