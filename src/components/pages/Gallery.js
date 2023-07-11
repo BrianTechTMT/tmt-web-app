@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 
 function ImageComponent() {
-  const imageFiles = useState([]);
+  const [imageFiles, setImageFiles] = useState([]);
 
   useEffect(() => {
     fetch('../images/TNImages/')  // replace with your server address
       .then(response => response.json())
-      .then(data => imageFiles(data));
+      .then(data => setImageFiles(data));
   }, []);
 
   return (
