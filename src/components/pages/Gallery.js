@@ -9,7 +9,7 @@ class ImageComponent extends React.Component {
   }
 
   componentDidMount(){
-    const imageFiles = this.importAll(require.context('../images/TNImages/', false, /\.(png|jpe?g|svg)$/));
+    const imageFiles = this.importAll(require.context('../images/TNImages/', false, /\.(png|jpe?g|svg|JPG)$/));
     this.setState({ imageFiles });
   }
 
