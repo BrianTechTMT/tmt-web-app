@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from 'react';
 
-function Gallery() {
+function App() {
     const [images, setImages] = useState([]);
 
     useEffect(() => {
-        fetch('http://24.4.146.140:8080/api/images')
+        fetch('http://24.4.146.140:8080/images')
             .then(res => res.json())
             .then(setImages);
     }, []);
 
     return (
         <div>
-            {images.map(image => (
-                <img src={`http://24.4.146.140/images/${image}`} alt={image} key={image} />
+            {images.map(file => (
+                <img src={`http://24.4.146.140:8080/images/${file}`} alt={file} key={file} />
             ))}
         </div>
     );
 }
 
-export default Gallery;
+export default App;
