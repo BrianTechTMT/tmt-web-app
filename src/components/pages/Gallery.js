@@ -4,7 +4,7 @@ function Gallery() {
     const [images, setImages] = useState([]);
 
     useEffect(() => {
-        fetch('http://24.4.146.140:8080/images')
+        fetch('http://24.4.146.140:8080/api/images')
             .then(res => res.json())
             .then(setImages);
     }, []);

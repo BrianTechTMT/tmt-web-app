@@ -9,6 +9,8 @@ import Morse from './components/pages/Morse'
 import ER from './components/pages/ER'
 import Gallery from './components/pages/Gallery';
 
+const startServer = require('./components/inc/Server');
+startServer();
 function App(){
   return(
     <Router>
