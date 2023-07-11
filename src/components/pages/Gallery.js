@@ -4,7 +4,7 @@ function ImageComponent() {
   const [imageFiles, setImageFiles] = useState([]);
 
   useEffect(() => {
-    fetch('~/TMTSite/tmt-web-app/src/components/images/TNImages/')  // replace with your server address
+    fetch('http://24.4.146.140:8080/images')  // replace with your server address
       .then(response => response.json())
       .then(data => setImageFiles(data));
   }, []);
@@ -12,7 +12,7 @@ function ImageComponent() {
   return (
     <div>
       {imageFiles.map((file, index) => (
-        <img key={index} src={`~/TMTSite/tmt-web-app/src/components/images/TNImages/${file}`} alt={file} />
+        <img key={index} src={`http://24.4.146.140:8080/images/${file}`} alt={file} />
       ))}
     </div>
   );
