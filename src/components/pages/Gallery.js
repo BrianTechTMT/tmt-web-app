@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from 'react';
 
-function ImageComponent() {
-  const [imageFiles, setImageFiles] = useState([]);
+function Gallery() {
+    const [images, setImages] = useState([]);
 
-  useEffect(() => {
-    fetch('http://24.4.146.140:8080/images')  // replace with your server address
-      .then(response => response.json())
-      .then(data => setImageFiles(data));
-  }, []);
+    useEffect(() => {
+        fetch('http://24.4.146.140:8080/images')
+            .then(res => res.json())
+            .then(setImages);
+    }, []);
 
-  return (
-    <div>
-      {imageFiles.map((file, index) => (
-        <img key={index} src={'http://24.4.146.140:8080/images/${file}'} alt={file} />
-      ))}
-    </div>
-  );
+    return (
+        <div>
+            {images.map(image => (
+                <img src={`http://24.4.146.140/images/${image}`} alt={image} key={image} />
+            ))}
+        </div>
+    );
 }
 
-export default ImageComponent;
+export default Gallery;
