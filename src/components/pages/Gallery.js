@@ -1,21 +1,28 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-function App() {
-    const [images, setImages] = useState([]);
+class ImageComponent extends React.Component {
+  state = { imageFiles: [] };
 
-    useEffect(() => {
-        fetch('http://24.4.146.140:8080/images')
-            .then(res => res.json())
-            .then(setImages);
-    }, []);
+  importAll(r){
+    return r.keys().map(r);
+  }
 
+  componentDidMount(){
+    const imageFiles = this.importAll(require.context('../images/TNImages/', false, /\.(png|jpe?g|svg)$/));
+    this.setState({ imageFiles });
+  }
+
+  render() {
+    const { imageFiles } = this.state;
     return (
-        <div>
-            {images.map(file => (
-                <img src={`http://24.4.146.140:8080/images/${file}`} alt={file} key={file} />
-            ))}
-        </div>
+      <div>
+        {imageFiles.map((file, index) => (
+          <img key={index} src={file} alt="info" />
+        ))}
+      </div>
     );
+  }
 }
 
-export default App;
+export default ImageComponent;
