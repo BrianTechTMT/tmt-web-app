@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import { Container, Row, Col, Card} from 'react-bootstrap';
+
 class ImageComponent extends React.Component {
   state = { imageFiles: [] };
 
@@ -16,11 +18,21 @@ class ImageComponent extends React.Component {
   render() {
     const { imageFiles } = this.state;
     return (
-      <div>
-        {imageFiles.map((file, index) => (
-          <img key={index} src={file} alt="info" />
-        ))}
+        <>
+      <div className='pt-5'>
+
+
+            <Container className='pt-5'>
+                <Row className='justify-content-md-center'>
+                    {imageFiles.map((file, index) => (
+                        <Card style={{ width: '18rem' }} className="d-flex" align="center">
+                            <Card.Img className= "justify-content-md-center" align="center" variant="top" src={file}  />
+                        </Card>
+                    ))}
+                </Row>
+            </Container>
       </div>
+      </>
     );
   }
 }
