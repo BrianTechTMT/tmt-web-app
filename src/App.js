@@ -20,6 +20,7 @@ function App(){
         <Route path ="/morse" element={<Morse/>}/>
         <Route path ="/eucharistic_revival" element={<ER/>}/>  
         <Route path ="/gallery" element={<Gallery/>}/>  
+        <Route path ="/gallery/:folder" element={<Gallery/>}/>  
       </Routes>
     </Router>
   )

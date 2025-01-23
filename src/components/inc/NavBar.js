@@ -33,6 +33,7 @@ function NavBar(){
             <NavDropdown.Item href="https://dmlv.org/">Giáo Xứ Đức Mẹ La Vang</NavDropdown.Item>
           </NavDropdown>
           <Nav.Link href="https://doan-tmt.org/gallery">Image Gallery</Nav.Link>
+                    <Nav.Link href="/#/gallery">Image Gallery</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Container>
